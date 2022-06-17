@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+/*navbar css**/
+.tableBtn{
+  margin: 0 0 0 15px;
+  border-radius: 50px;
+  height: 40px;
+  width: 153px;
+  background-color: transparent;
+  border: 2px solid #cda45e;
+  margin-left: 75px;
+  letter-spacing: 1px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link1 {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link1:hover{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.tableBtn:hover{
+  background-color: #cda45e;
+}
+#home-link{
+  color: #cda45e;
+  font-size: 14px;
+  padding: 10px 0 10px 30px;
+}
+#sabLink{
+  color: white;
+  font-weight: 300;
+  padding: 10px 0 10px 30px;
+  font-size: 14px;
+}
+#sabLink:hover{
+  color: #cda45e;
+}
+#restaurant{
+font-size: 28px;
+margin: 0;
+padding: 0;
+line-height: 1;
+font-weight: 300;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-family: "Poppins", sans-serif;
+margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/**home section*/
+#mainContent::before{
+  content: "";
+  color: #fff;
+  background:rgba(0, 0, 0, 0.38);
+  position: absolute;
+  height:372px;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.welcomeR{
+  color: #cda45e;
+  font-weight: 900;
+  font-size: 50px;
+  opacity: 0.9;
+}
+.deliveryP{
+  color: white;
+  font-family: "Playfair Display", serif;
+  opacity: 0.9;
+  font-size: 24px;
+}
+.menuBtn{
+  border-radius: 50px;
+  height: 40px;
+  width: 153px;
+  background-color: transparent;
+  border: 2px solid #cda45e;
+  margin: 10px;
+  color: white;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.menuBtn:hover{
+  background-color:#cda45e;
+  cursor: pointer;
+}
+/* about section css */
+.voluptatem{
+  color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  opacity: 0.9;
+}
+.voluptatem11{
+  color: white;
+  font-style: italic;
+  
+}
+#circle-check{
+  color:#cda45e;
+}
+.checkP{
+  color: white;
+  
+}
+.checkP1{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.aboutImg{
+  z-index: 1;
+  content: "";
+  border: 5px solid #cda45e;
+  border: 5px solid #cda45e;
+  transition: 0.5s;
+}
+.aboutImg:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+/* #aboutContent::before{
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+} */
+
+/* choose section css */
+.chooseTitle{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+.chooseTitle::after{
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+.chooseText{
+font-size: 36px;
+font-weight: 700;
+font-family: "Playfair Display", serif;
+color: #cda45e;
+}
+.card{
+  background-color: #1a1814;
+}
+.card:hover{
+  background: #cda45e;
+  color: white;
+}
+.card:hover span{
+  color: #fff;
+}
+.card:hover p{
+  color: #fff;
+}
+.number{
+  font-size: 28px;
+  font-weight: 700;
+  color: #cda45e;
+}
+
+.cardText{
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px 0;
+  font-family: "Playfair Display", serif;
+}
+.cardPara{
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+/*menu section*/
+.allMenuBtn{
+  text-align: center;
+  align-items: center;
+}
+.allBtn{
+  background-color: transparent;
+  border-radius: 50px;
+  color: white;
+  border: 2px solid #cda45e;
+  width: 80px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px
+}
+.allBtn:hover{
+  background-color: #cda45e;
+}
+.menuImg{
+  width: 70px;
+  border-radius: 50%;
+  float: left;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+ 
+}
+.menuText{
+ color: #fff;
+ font-size: 19px;
+ font-weight: 500;
+ font-family: "Open Sans", sans-serif;
+}
+.menuPrice{
+  color:#cda45e;
+  font-size: 17px;
+  font-weight: bold;
+}
+.dottedLine{
+  color: rgba(255, 255, 255, 0.5);
+}
+.menuDes{
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+ position: absolute;
+ margin-top: -14px;
+ margin-left: 105px;
 }
