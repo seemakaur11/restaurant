@@ -101,7 +101,7 @@ function Navbar() {
                 </div>
             </section>
             {/* choose restaurant */}
-            <section className='' style={{ background: "#0c0b09" }}>
+            <section style={{ background: "#0c0b09" }}>
                 <div className='container py-5'>
                     <div className='row'>
                         <p className='chooseTitle'>WHY US</p>
@@ -160,6 +160,15 @@ function Navbar() {
                                 )
                             })
                         }
+                    </div>
+                </div>
+            </section>
+            {/* special section */}
+            <section style={{ background: "#0c0b09" }}>
+                <div className='container py-5'>
+                    <div className='row'>
+                        <p className='chooseTitle'>SPECIALS</p>
+                        <p className='chooseText'>Check Our Specials</p>
                     </div>
                 </div>
             </section>
