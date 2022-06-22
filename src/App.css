@@ -53,7 +53,7 @@ margin-left: 50px;
   color: #fff;
   background:rgba(0, 0, 0, 0.38);
   position: absolute;
-  height:372px;
+  height:375px;
   width: 100%;
   bottom: 0;
   top: 0;
@@ -141,7 +141,8 @@ margin-left: 50px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #f0ebeb;
+  opacity: 1.1;
   font-family: "Poppins", sans-serif;
 }
 .chooseTitle::after{
@@ -242,4 +243,361 @@ color: #cda45e;
  position: absolute;
  margin-top: -14px;
  margin-left: 105px;
+}
+
+/*special section css*/
+.specialBtn{
+  border: 0;
+  padding: 12px 15px;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: transparent;
+}
+.specialBtn:hover{
+  color: #cda45e;
+}
+.borderBtn{
+  border-right: 2px solid #cda45e;
+}
+.specialBtnActive{
+  color: #1a1814;
+  background: #cda45e;
+  border-color: #cda45e;
+}
+.specialBtnActive:hover {
+  color: black
+}
+
+.specialHead{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+.specialText{
+  color: #aaaaaa;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px
+}
+.specialPara{
+  color: #aaaaaa;
+  font-weight: 400;
+  font-size: 16px
+}
+/* party section css*/
+.partyHead{
+  font-weight: 700;
+  font-size: 28px;
+  color: #cda45e;
+  text-align: start;
+  opacity: 0.9;
+  font-family: "Playfair Display", serif;
+}
+.partyPrice{
+  color:#fff;
+  text-align: start;
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-top: -6px;
+}
+.partyPrice span {
+border-bottom: 2px solid #cda45e;
+}
+.partyText{
+  color: white;
+  text-align: start;
+  font-style: italic;
+  margin-top: -12px;
+}
+.partyText1{
+  color: white;
+  text-align: start;
+  margin-top: -6px;
+  opacity: 1.1;
+
+}
+.partyText11{
+ font-family: "Open Sans", sans-serif;
+ color: white;
+ text-align: start;
+ letter-spacing: 1px;
+ opacity: 1.1;
+ font-weight: 500;
+}
+.partyContent::before{
+  content: "";
+  color: #fff;
+  background:#2125291c;
+  position: absolute;
+  height:auto;
+  width: 100%;
+}
+.checkCircle{
+  color: #cda45e;
+}
+/*table section css*/
+.inputData{
+  border-radius: 0;
+  margin: 10px;
+  font-size: 14px;
+  background: #0c0b09;
+  border: 1px solid #625b4b;
+  height: 44px;
+  padding: 0px 10px ;
+  color: white;
+  width: 100%;
+  outline: none;
+  
+}
+.inputData11{
+  border-radius: 0;
+  margin: 10px;
+  font-size: 14px;
+  background: #0c0b09;
+  border: 1px solid #625b4b;
+  height: 90px;
+  padding: 15px 10px ;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+.bookBtn{
+  margin: 0 0 0 15px;
+  border-radius: 50px;
+  height: 45px;
+  width: 158px;
+  background-color: #cda45e;
+  border: 2px solid #cda45e;
+  margin-left: 75px;
+  letter-spacing: 1px;
+}
+.galleryImg{
+  transition: 2s;
+}
+.galleryImg:hover {
+  transform: scale(1.5); 
+}
+.img-container{
+  overflow: hidden;
+}
+/*chef section css*/
+.chefContainer{
+  position: relative;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgb(0 0 0 / 63%); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.chefText{
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.9;
+  font-family: "Playfair Display", serif;
+}
+.chefName{
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+.socilaIcon{
+  color: white;
+}
+.socilaIcon:hover{
+  color: #cda45e;
+}
+/*map section css*/
+#map-frame{
+  width: 100%;
+}
+.inputData22{
+  border-radius: 0;
+  margin: 10px;
+  font-size: 14px;
+  background: #0c0b09;
+  border: 1px solid #625b4b;
+  height: 140px;
+  padding: 15px 10px ;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+.socialLocation{
+  color: #cda45e;
+  font-size: 25px;
+}
+.socialText{
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.socialPara{
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #bab3a6;
+  margin-top: -16px;
+  margin-left: 52px;
+}
+.horizontalLine{
+  width: 100%;
+  border-top: 1px solid #37332a;
+}
+
+/*footer section css*/
+.subscribe{
+  margin-top: 30px;
+  background: #28251f;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid #454035;
+}
+.emailSub{
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+  background: #28251f;
+  color: white;
+  outline: none;
+}
+.submitInput{
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #cda45e;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.footerRest{
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.street{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+.footerIcon{
+  color: white;
+  font-size: 27px;
+}
+.footerIcon:hover{
+  color: #cda45e;
+}
+.usefullLink{
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 12px;
+  font-family: "Playfair Display", serif;
+}
+.footerRight{
+  color: #cda45e;
+  font-size: 19px;
+}
+.useText{
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.useText11{
+  font-size: 16px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.copyright{
+  font-size: 14px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.seema{
+  color: #cda45e;
+  margin-top: 15px;
+}
+/*testimonials section css*/
+.testomonialItem{
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #26231d;
+  position: relative;
+  border-radius: 6px;
+  width: 300px;
+  height: auto;
+  z-index: 1;
+  color: white
+}
+.circleImg{
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.2)
+}
+.itemOwl{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 5px 45px;
+  color: white;
+  display: flex;
+  font-family: "Playfair Display", serif;
+}
+.itemOwl12{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 0 45px;
+  font-family: "Playfair Display", serif;
+  justify-content: center;
+  text-align: center;
+}
+.quoteLeft{
+  color: #cda45e;
+  font-size: 25px;
+  left: -5px;
+  position: relative;
+  display: inline-block;
+}
+.quoteRight{
+  color: #cda45e;
+  font-size: 25px;
+  left: 5px;
+  position: relative;
+  display: inline-block;
 }

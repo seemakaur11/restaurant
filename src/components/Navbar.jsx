@@ -3,6 +3,14 @@ import home from '../img/home.jpg';
 import about from '../img/about.jpg';
 import about1 from '../img/about1.jpg';
 import { menu } from './Menu';
+import Special from './Special';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    duration: 800,
+    // easing: 'ease-in-quad',
+    delay: 100,
+});
 
 function Navbar() {
     const [items, setItems] = useState(menu);
@@ -13,7 +21,7 @@ function Navbar() {
         setItems(updatedItem)
     }
     return (
-        <section style={{ backgroundImage: `url(${home})`, backgroundPosition: "center", backgroundAttachment: "fixed" }} className="pt-5">
+        <section style={{ backgroundImage: `url(${home})`, backgroundPosition: "center", backgroundAttachment: "fixed", height: "auto" }} className="pt-5">
             <div id="mainContent"></div>
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
                 <div className="container-fluid">
@@ -67,7 +75,7 @@ function Navbar() {
             {/* home section */}
             <section className='pt-5'>
                 <div id="mainContent"></div>
-                <div className='container py-5'>
+                <div className='container py-5' data-aos="zoom-in" data-aos-delay="100">
                     <div className='row'>
                         <h1 className='welcomeR'>Welcome to <strong>Restaurantly</strong></h1>
                         <p className='deliveryP'>Delivering great food for more than 18 years!</p>
@@ -76,11 +84,11 @@ function Navbar() {
                     <button className='menuBtn'>BOOK A TABLE</button>
                 </div>
             </section>
-            <section style={{ backgroundImage: `url(${about})`, backgroundPosition: "center", backgroundAttachment: "fixed" }} id="aboutContent">
+            <section style={{ backgroundImage: `url(${about})`, backgroundPosition: "center bottom", backgroundAttachment: "fixed" }} id="aboutContent">
                 <div id="aboutContent"></div>
                 <div className='container py-5'>
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-md-6' data-aos="fade-up">
                             <h3 className='voluptatem'>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
                             <p className='voluptatem11'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <p className='checkP'><i className="fa-solid fa-circle-check mx-3" id="circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -94,7 +102,7 @@ function Navbar() {
                                 sint occaecat cupidatat non proident, sunt in culpa qui officia
                                 deserunt mollit anim id est laborum</p>
                         </div>
-                        <div className='col-md-6'>
+                        <div className='col-md-6' data-aos="zoom-in">
                             <img src={about1} className="img-fluid aboutImg" alt="about" />
                         </div>
                     </div>
@@ -104,10 +112,10 @@ function Navbar() {
             <section style={{ background: "#0c0b09" }}>
                 <div className='container py-5'>
                     <div className='row'>
-                        <p className='chooseTitle'>WHY US</p>
-                        <p className='chooseText'>Why Choose Our Restaurant</p>
+                        <p className='chooseTitle' data-aos="fade-up">WHY US</p>
+                        <p className='chooseText' data-aos="fade-up">Why Choose Our Restaurant</p>
                         <div className='col-md-4 colSection'>
-                            <div className='card'>
+                            <div className='card' data-aos="zoom-in" delay="200">
                                 <span className='number mx-3 pt-5'>01</span>
                                 <h4 className='cardText mx-3'>Lorem Ipsum</h4>
                                 <p className='cardPara mx-3'>Ulamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -115,7 +123,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className='col-md-4 colSection'>
-                            <div className='card'>
+                            <div className='card' data-aos="zoom-in" delay="200">
                                 <span className='number mx-3 pt-5'>02</span>
                                 <h4 className='cardText mx-3'>Repellat Nihil</h4>
                                 <p className='cardPara mx-3'>Dolorem est fugiat occaecati voluptate velit esse.
@@ -123,7 +131,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className='col-md-4 colSection'>
-                            <div className='card'>
+                            <div className='card' data-aos="zoom-in" delay="200">
                                 <span className='number mx-3 pt-5'>03</span>
                                 <h4 className='cardText mx-3'>Ad ad velit qui</h4>
                                 <p className='cardPara mx-3'>Molestiae officiis omnis illo asperiores.
@@ -136,7 +144,7 @@ function Navbar() {
             {/* menu section */}
             <section style={{ background: "#1a1814" }}>
                 <div className='container py-5'>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-up" delay="200">
                         <p className='chooseTitle'>MENU</p>
                         <p className='chooseText'>Check Our Tasty Menu</p>
                         <div className='allMenuBtn'>
@@ -146,7 +154,7 @@ function Navbar() {
                             <button className='allBtn m-2' onClick={() => handleClick("Specialty")}>Specialty</button>
                         </div>
                     </div>
-                    <div className='row pt-5'>
+                    <div className='row pt-5' data-aos="fade-up" delay="200">
                         {
                             items.map((element) => {
                                 const { id, heading, image, description, price } = element
@@ -162,18 +170,9 @@ function Navbar() {
                         }
                     </div>
                 </div>
-            </section>
-            {/* special section */}
-            <section style={{ background: "#0c0b09" }}>
-                <div className='container py-5'>
-                    <div className='row'>
-                        <p className='chooseTitle'>SPECIALS</p>
-                        <p className='chooseText'>Check Our Specials</p>
-                    </div>
-                </div>
+                <Special />
             </section>
         </section>
     )
 }
-
 export default Navbar
