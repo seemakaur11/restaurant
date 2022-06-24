@@ -26,7 +26,7 @@ function Home() {
                     <div className='justify-content-center text-center'>
                         <button className='menuBtn'>OUR MENU</button>
                         <button className='menuBtn'>BOOK A TABLE</button>
-                        <div className='pt-3 justify-content-center text-center' style={{ display: "flex" }}>
+                        <div className='py-3 justify-content-center text-center' style={{ display: "flex" }}>
                             <p className='timeBtn mx-2'><i className="fa-solid fa-mobile-screen-button socialLocation m-2"></i>+1 5589 55488 55s</p>
                             <p className='timeBtn'><i className="fa-regular fa-clock socialLocation m-2"></i>Monday-Saturday:11:00 AM - 23:00 PM</p>
                         </div>
