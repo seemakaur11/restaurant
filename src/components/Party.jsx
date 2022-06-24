@@ -1,13 +1,14 @@
 import React from 'react';
 import events from '../img/events.jpg';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { eventsList } from './EventList';
 import Table from './Table';
 
 function Party() {
-    return (
 
+    return (
         <section style={{ backgroundImage: `url(${events})`, backgroundAttachment: "fixed", height: "auto", backgroundPosition: "center bottom" }}>
             <div className="partyContent"></div>
             <div className='container py-5'>
@@ -16,7 +17,7 @@ function Party() {
                     <p className='chooseText'>Organize Your Events in our Restaurant</p>
                 </div>
                 <div className='container pt-4'>
-                    <Carousel showArrows={true} showIndicators={true} showStatus={false} autoPlay showThumbs={true}>
+                    <OwlCarousel items={1} className="owl-theme" loop margin={8} autoplay={true}>
                         {
                             !!eventsList && eventsList.map((obj) => {
                                 const { id, name, img, text, price, description } = obj
@@ -42,7 +43,7 @@ function Party() {
                                 )
                             })
                         }
-                    </Carousel>
+                    </OwlCarousel>
                 </div>
             </div>
             <Table />

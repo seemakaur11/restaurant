@@ -13,7 +13,7 @@ function Location() {
                         </div>
                         <div className='py-2'>
                             <h4 className='socialText'><i className="fa-regular fa-clock socialLocation m-3"></i>Open Hours:</h4>
-                            <p className='socialPara'>Monday-Saturday:11:00 AM - 2300 PM</p>
+                            <p className='socialPara'>Monday-Saturday:11:00 AM - 23:00 PM</p>
                         </div>
                         <div className='py-2'>
                             <h4 className='socialText'><i className="fa-regular fa-envelope socialLocation m-3"></i>Email: </h4>

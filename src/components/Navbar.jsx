@@ -1,27 +1,10 @@
-import React, { useState } from 'react';
-import home from '../img/home.jpg';
-import about from '../img/about.jpg';
-import about1 from '../img/about1.jpg';
-import { menu } from './Menu';
-import Special from './Special';
-import AOS from 'aos';
+import React from 'react';
 import 'aos/dist/aos.css';
-AOS.init({
-    duration: 800,
-    // easing: 'ease-in-quad',
-    delay: 100,
-});
+import Home from './Home';
 
 function Navbar() {
-    const [items, setItems] = useState(menu);
-    const handleClick = (categItem) => {
-        const updatedItem = menu.filter((curElement) => {
-            return curElement.category === categItem
-        });
-        setItems(updatedItem)
-    }
     return (
-        <section style={{ backgroundImage: `url(${home})`, backgroundPosition: "center", backgroundAttachment: "fixed", height: "auto" }} className="pt-5">
+        <section className="pt-5">
             <div id="mainContent"></div>
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
                 <div className="container-fluid">
@@ -32,13 +15,13 @@ function Navbar() {
                     <div className="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="/home" id="home-link">Home</a>
+                                <a className="nav-link" href="/" id="home-link">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">About</a>
+                                <a className="nav-link" href="/about" id="sabLink">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">Menu</a>
+                                <a className="nav-link" href="/menu" id="sabLink">Menu</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/fdf" id="sabLink">Specials</a>
@@ -72,8 +55,9 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
+            <Home />
             {/* home section */}
-            <section className='pt-5'>
+            {/* <section className='pt-5'>
                 <div id="mainContent"></div>
                 <div className='container py-5' data-aos="zoom-in" data-aos-delay="100">
                     <div className='row'>
@@ -83,8 +67,8 @@ function Navbar() {
                     <button className='menuBtn'>OUR MENU</button>
                     <button className='menuBtn'>BOOK A TABLE</button>
                 </div>
-            </section>
-            <section style={{ backgroundImage: `url(${about})`, backgroundPosition: "center bottom", backgroundAttachment: "fixed" }} id="aboutContent">
+            </section> */}
+            {/* <section style={{ backgroundImage: `url(${about})`, backgroundPosition: "center bottom", backgroundAttachment: "fixed" }} id="aboutContent">
                 <div id="aboutContent"></div>
                 <div className='container py-5'>
                     <div className='row'>
@@ -107,9 +91,9 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* choose restaurant */}
-            <section style={{ background: "#0c0b09" }}>
+            {/* <section style={{ background: "#0c0b09" }}>
                 <div className='container py-5'>
                     <div className='row'>
                         <p className='chooseTitle' data-aos="fade-up">WHY US</p>
@@ -140,9 +124,9 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* menu section */}
-            <section style={{ background: "#1a1814" }}>
+            {/* <section style={{ background: "#1a1814" }}>
                 <div className='container py-5'>
                     <div className='row' data-aos="fade-up" delay="200">
                         <p className='chooseTitle'>MENU</p>
@@ -171,7 +155,7 @@ function Navbar() {
                     </div>
                 </div>
                 <Special />
-            </section>
+            </section> */}
         </section>
     )
 }

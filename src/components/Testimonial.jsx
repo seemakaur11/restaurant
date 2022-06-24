@@ -20,11 +20,13 @@ function Testimonial() {
                                 const { id, img, name, text, post } = obj
                                 return (
                                     <div className="row" key={id} data-aos="fade-up" delay="200">
-                                        <div className="col-md-4">
+                                        <div className="col-lg-4">
                                             <p className="testomonialItem"><i className="fa-solid fa-quote-left quoteLeft"></i>{text}<i className="fa-solid fa-quote-right quoteRight"></i></p>
                                             <img src={img} className="circleImg" alt="test" />
-                                            <h3 className="itemOwl">{name}</h3>
-                                            <h4 className="itemOwl12">{post}</h4>
+                                            <div className='pt-2'>
+                                                <h3 className="itemOwl">{name}</h3>
+                                                <h4 className="itemOwl12">{post}</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 )
