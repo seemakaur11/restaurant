@@ -16,7 +16,7 @@ function Home() {
 
     return (
         <div>
-            <section className='pt-5' style={{ backgroundImage: `url(${home})`, backgroundPosition: "center", backgroundAttachment: "fixed", height: "550px" }}>
+            <section className='pt-5' id="home" style={{ backgroundImage: `url(${home})`, backgroundPosition: "center", backgroundAttachment: "fixed", height: "550px" }}>
                 <div id="mainContent"></div>
                 <div className='container py-5' data-aos="zoom-in" data-aos-delay="100">
                     <div className='row justify-content-center text-center pt-5'>
@@ -34,7 +34,7 @@ function Home() {
                 </div>
             </section>
             <div id="aboutContent"></div>
-            <section style={{ backgroundImage: `url(${about})`, backgroundPosition: "center bottom", backgroundAttachment: "fixed" }} id="aboutContent">
+            <section id="about" className='aboutContent' style={{ backgroundImage: `url(${about})`, backgroundPosition: "center bottom", backgroundAttachment: "fixed" }}>
                 <div className='container py-5'>
                     <div className='row'>
                         <div className='col-lg-6' data-aos="fade-up">

@@ -1,9 +1,11 @@
-import React from 'react'
-import Contact from './Contact'
-import { chefList } from './EventList'
+import React from 'react';
+import Contact from './Contact';
+import { chefList } from './EventList';
+
 function Chef() {
+
     return (
-        <section style={{ background: "#0c0b09" }}>
+        <section id="chefs" style={{ background: "#0c0b09" }}>
             <div className='container py-5'>
                 <div className='row' data-aos="fade-up" delay="200">
                     <p className='chooseTitle'>CHEFS</p>

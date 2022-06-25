@@ -4,7 +4,7 @@ import Testimonial from './Testimonial';
 function Table() {
     return (
         <div>
-            <section style={{ background: "#0c0b09" }}>
+            <section id="book" style={{ background: "#0c0b09" }}>
                 <div className='container py-5'>
                     <div className='row' data-aos="fade-up" delay="200">
                         <p className='chooseTitle'>RESERVATION</p>

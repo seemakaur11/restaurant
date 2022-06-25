@@ -1,6 +1,7 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 import Home from './Home';
+import { Link } from "react-scroll";
 
 function Navbar() {
     return (
@@ -15,25 +16,25 @@ function Navbar() {
                     <div className="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="/" id="home-link">Home</a>
+                                <Link className="nav-link" id="home-link" activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about" id="sabLink">About</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/menu" id="sabLink">Menu</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="menu" spy={true} smooth={true} offset={-100} duration={500}>Menu</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">Specials</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="specials" spy={true} smooth={true} offset={-100} duration={500}>Specials</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">Events</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="events" spy={true} smooth={true} offset={-100} duration={500}>Events</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">Chefs</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="chefs" spy={true} smooth={true} offset={-100} duration={500}>Chefs</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">Gallery</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="gallery" spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/dsds" role="button" data-bs-toggle="dropdown" id="sabLink">Drop Down</a>
@@ -46,116 +47,16 @@ function Navbar() {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/fdf" id="sabLink">Contact</a>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
                             </li>
                             <button className='tableBtn'>
-                                <a className="nav-link1" href="/book">BOOK A TABLE</a>
+                                <Link className="nav-link1" activeClass="active" to="book" spy={true} smooth={true} offset={-100} duration={500}>BOOK A TABLE</Link>
                             </button>
                         </ul>
                     </div>
                 </div>
             </nav>
             <Home />
-            {/* home section */}
-            {/* <section className='pt-5'>
-                <div id="mainContent"></div>
-                <div className='container py-5' data-aos="zoom-in" data-aos-delay="100">
-                    <div className='row'>
-                        <h1 className='welcomeR'>Welcome to <strong>Restaurantly</strong></h1>
-                        <p className='deliveryP'>Delivering great food for more than 18 years!</p>
-                    </div>
-                    <button className='menuBtn'>OUR MENU</button>
-                    <button className='menuBtn'>BOOK A TABLE</button>
-                </div>
-            </section> */}
-            {/* <section style={{ backgroundImage: `url(${about})`, backgroundPosition: "center bottom", backgroundAttachment: "fixed" }} id="aboutContent">
-                <div id="aboutContent"></div>
-                <div className='container py-5'>
-                    <div className='row'>
-                        <div className='col-md-6' data-aos="fade-up">
-                            <h3 className='voluptatem'>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                            <p className='voluptatem11'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p className='checkP'><i className="fa-solid fa-circle-check mx-3" id="circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p className='checkP'><i className="fa-solid fa-circle-check mx-3" id="circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                            <p className='checkP'><i className="fa-solid fa-circle-check mx-3" id="circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
-
-                            <p className='checkP1'>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum</p>
-                        </div>
-                        <div className='col-md-6' data-aos="zoom-in">
-                            <img src={about1} className="img-fluid aboutImg" alt="about" />
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-            {/* choose restaurant */}
-            {/* <section style={{ background: "#0c0b09" }}>
-                <div className='container py-5'>
-                    <div className='row'>
-                        <p className='chooseTitle' data-aos="fade-up">WHY US</p>
-                        <p className='chooseText' data-aos="fade-up">Why Choose Our Restaurant</p>
-                        <div className='col-md-4 colSection'>
-                            <div className='card' data-aos="zoom-in" delay="200">
-                                <span className='number mx-3 pt-5'>01</span>
-                                <h4 className='cardText mx-3'>Lorem Ipsum</h4>
-                                <p className='cardPara mx-3'>Ulamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Et consectetur ducimus vero placeat</p>
-                            </div>
-                        </div>
-                        <div className='col-md-4 colSection'>
-                            <div className='card' data-aos="zoom-in" delay="200">
-                                <span className='number mx-3 pt-5'>02</span>
-                                <h4 className='cardText mx-3'>Repellat Nihil</h4>
-                                <p className='cardPara mx-3'>Dolorem est fugiat occaecati voluptate velit esse.
-                                    Dicta veritatis dolor quod et vel dire leno para dest</p>
-                            </div>
-                        </div>
-                        <div className='col-md-4 colSection'>
-                            <div className='card' data-aos="zoom-in" delay="200">
-                                <span className='number mx-3 pt-5'>03</span>
-                                <h4 className='cardText mx-3'>Ad ad velit qui</h4>
-                                <p className='cardPara mx-3'>Molestiae officiis omnis illo asperiores.
-                                    Aut doloribus vitae sunt debitis quo vel nam quis</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-            {/* menu section */}
-            {/* <section style={{ background: "#1a1814" }}>
-                <div className='container py-5'>
-                    <div className='row' data-aos="fade-up" delay="200">
-                        <p className='chooseTitle'>MENU</p>
-                        <p className='chooseText'>Check Our Tasty Menu</p>
-                        <div className='allMenuBtn'>
-                            <button className='allBtn m-2' onClick={() => setItems(menu)}>All</button>
-                            <button className='allBtn m-2' onClick={() => handleClick("Starters")}>Starters</button>
-                            <button className='allBtn m-2' onClick={() => handleClick("Salads")}>Salads</button>
-                            <button className='allBtn m-2' onClick={() => handleClick("Specialty")}>Specialty</button>
-                        </div>
-                    </div>
-                    <div className='row pt-5' data-aos="fade-up" delay="200">
-                        {
-                            items.map((element) => {
-                                const { id, heading, image, description, price } = element
-                                return (
-                                    <div className='col-md-6' key={id}>
-                                        <img src={image} alt={heading} className="menuImg m-3" />
-                                        <p className='menuText mt-4'>{heading}<span className='dottedLine'>..................................</span>
-                                            <span className='menuPrice'>${price}</span></p>
-                                        <p className='menuDes'>{description}</p>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-                <Special />
-            </section> */}
         </section>
     )
 }

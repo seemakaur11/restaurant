@@ -5,7 +5,7 @@ import { gallery } from './EventList';
 function Gallery() {
 
     return (
-        <section style={{ background: "#0c0b09" }}>
+        <section id="gallery" style={{ background: "#0c0b09" }}>
             <div className='container-fluid'>
                 <div className='row mx-5 p-5' data-aos="fade-up" delay="200">
                     <p className='chooseTitle'>GALLERY</p>

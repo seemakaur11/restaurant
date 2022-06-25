@@ -25,12 +25,14 @@
   color: #cda45e;
   font-size: 14px;
   padding: 10px 0 10px 30px;
+  cursor: pointer;
 }
 #sabLink{
   color: white;
   font-weight: 300;
   padding: 10px 0 10px 30px;
   font-size: 14px;
+  cursor: pointer;
 }
 #sabLink:hover{
   color: #cda45e;
@@ -127,7 +129,7 @@ margin-left: 50px;
   -webkit-transform: scale(1.1);
   transform: scale(1.1); 
 }
-#aboutContent::before{
+.aboutContent::before{
   content: "";
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -610,6 +612,13 @@ border-bottom: 2px solid #cda45e;
   font-size: 14px;
   margin-bottom: 0;
   color: white;
-  /* margin-top: -16px;
-  margin-left: 52px; */
+}
+#scrollBtn{
+  position: fixed; 
+  right: 15px;
+  bottom: 10px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color:#cda45e;
 }

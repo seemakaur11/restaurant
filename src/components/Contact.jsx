@@ -2,7 +2,7 @@ import React from 'react'
 import Location from './Location'
 function Contact() {
     return (
-        <section style={{ background: "#0c0b09" }}>
+        <section id="contact" style={{ background: "#0c0b09" }}>
             <div className='container-fluid py-5'>
                 <div className='row mx-5 p-3' data-aos="fade-up" delay="200">
                     <p className='chooseTitle'>CONTACT</p>

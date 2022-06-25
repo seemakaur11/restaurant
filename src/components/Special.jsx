@@ -15,7 +15,7 @@ function Special() {
 
     return (
         <div>
-            <section style={{ background: "#0c0b09" }}>
+            <section id="specials" style={{ background: "#0c0b09" }}>
                 <div className='container py-5'>
                     <div className='row' data-aos="fade-up" delay="200">
                         <p className='chooseTitle'>SPECIALS</p>

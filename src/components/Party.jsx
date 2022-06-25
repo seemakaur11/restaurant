@@ -9,7 +9,7 @@ import Table from './Table';
 function Party() {
 
     return (
-        <section style={{ backgroundImage: `url(${events})`, backgroundAttachment: "fixed", height: "auto", backgroundPosition: "center bottom" }}>
+        <section id="events" style={{ backgroundImage: `url(${events})`, backgroundAttachment: "fixed", height: "auto", backgroundPosition: "center bottom" }}>
             <div className="partyContent"></div>
             <div className='container py-5'>
                 <div className='row' data-aos="fade-up" delay="200">

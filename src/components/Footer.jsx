@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Footer() {
+
+    const [visible, setVisible] = useState(false);
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 300) {
+            setVisible(true)
+        }
+        else if (scrolled <= 300) {
+            setVisible(false)
+        }
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    window.addEventListener('scroll', toggleVisible);
     return (
         <section>
             <div className='container py-5'>
@@ -55,6 +75,8 @@ function Footer() {
                     </div>
                 </div>
             </section>
+            {/* topScrollBtn */}
+            <i className="fa-solid fa-circle-up" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} id="scrollBtn"></i>
         </section>
     )
 }

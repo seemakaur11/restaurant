@@ -27,7 +27,7 @@ export const menu = [{
     category: "Starters",
     heading: "Crab Cake",
     price: 7.95,
-    description: "A delicate crab cake served on a toasted roll with lettuce and tartar sauce"
+    description: "A delicate crab cake served on a toasted roll with lettuce,tartar sauce"
 },
 {
     id: 3,
@@ -58,7 +58,7 @@ export const menu = [{
     category: "Salads",
     heading: "Spinach Salad",
     price: 9.95,
-    description: "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette"
+    description: "Fresh spinach with mushrooms, hard boiled egg, warm bacon vinaigrette"
 },
 {
     id: 7,
