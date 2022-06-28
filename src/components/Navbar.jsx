@@ -16,25 +16,25 @@ function Navbar() {
                     <div className="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="nav-link" id="home-link" activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+                                <Link className="nav-link" id="home-link" activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={100}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+                                <Link className="nav-link" id="sabLink" to="about" spy={true} smooth={true} offset={-100} duration={100}>About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="menu" spy={true} smooth={true} offset={-100} duration={500}>Menu</Link>
+                                <Link className="nav-link" id="sabLink" to="menu" spy={true} smooth={true} offset={-100} duration={100}>Menu</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="specials" spy={true} smooth={true} offset={-100} duration={500}>Specials</Link>
+                                <Link className="nav-link" id="sabLink" to="specials" spy={true} smooth={true} offset={-100} duration={100}>Specials</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="events" spy={true} smooth={true} offset={-100} duration={500}>Events</Link>
+                                <Link className="nav-link" id="sabLink" to="events" spy={true} smooth={true} offset={-100} duration={100}>Events</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="chefs" spy={true} smooth={true} offset={-100} duration={500}>Chefs</Link>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="chefs" spy={true} smooth={true} offset={-100} duration={100}>Chefs</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="gallery" spy={true} smooth={true} offset={-100} duration={500}>Gallery</Link>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="gallery" spy={true} smooth={true} offset={-100} duration={100}>Gallery</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/dsds" role="button" data-bs-toggle="dropdown" id="sabLink">Drop Down</a>
@@ -47,10 +47,10 @@ function Navbar() {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" id="sabLink" activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
+                                <Link className="nav-link" id="sabLink" activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={100}>Contact</Link>
                             </li>
                             <button className='tableBtn'>
-                                <Link className="nav-link1" activeClass="active" to="book" spy={true} smooth={true} offset={-100} duration={500}>BOOK A TABLE</Link>
+                                <Link className="nav-link1" activeClass="active" to="book" spy={true} smooth={true} offset={-100} duration={300}>BOOK A TABLE</Link>
                             </button>
                         </ul>
                     </div>
